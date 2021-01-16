@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',               # これから使います
+    'rest_framework.authtoken',     # これから使います
     'core',
+    'user',
 ]
 
 MIDDLEWARE = [
@@ -120,4 +123,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-AUTH_USER_MODEL = 'core.User' 
+AUTH_USER_MODEL = 'core.User'
